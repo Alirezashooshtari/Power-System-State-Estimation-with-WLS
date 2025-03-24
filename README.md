@@ -1,1 +1,2 @@
 # Power-System-State-Estimation-with-WLS
+This repository contains a MATLAB implementation of a power system state estimation algorithm using the Weighted Least Squares (WLS) method. The code is designed to work with IEEE standard benchmark systems (e.g., IEEE 14-bus, 30-bus) via MATPOWER case files, enabling analysis of voltage magnitudes and angles under noisy measurement conditions. It includes tools for measurement generation, noise simulation, state estimation, and bad data detection using a chi-squared (χ²) test.
