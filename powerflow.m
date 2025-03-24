@@ -50,7 +50,7 @@ function h = powerflow(casestudy, V, del, voltage_buses, power_buses, power_bran
     h4 = zeros(npf, 1);  % Active power flows
     h5 = zeros(nqf, 1);  % Reactive power flows
 
-    %% **1. Compute Power Injection Measurements (Fixed)**
+    %% **1. Compute Power Injection Measurements
     if npi > 0
         for i = 1:npi
             m = fbus(ppi(i));
@@ -65,7 +65,7 @@ function h = powerflow(casestudy, V, del, voltage_buses, power_buses, power_bran
         end
     end
 
-    %% **2. Compute Power Flow Measurements (Fixed & Optimized)**
+    %% **2. Compute Power Flow Measurements
     if npf > 0
         for i = 1:npf
             m = fbus(pf(i));
